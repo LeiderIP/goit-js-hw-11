@@ -1,0 +1,99 @@
+// Estilos generales
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+input[type='search'] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 3px bold;
+  border-color: #007bff;
+  &:hover {
+    background-color: wheat;
+    border: 3px bold;
+    color: #007bff;
+    border-radius: 10px;
+    border: none;
+    transform: scale(1.02);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: text;
+  }
+}
+
+button[type='submit'] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: wheat;
+    color: #007bff;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  flex: 1 1 250px; /* Forzar un ancho mínimo de 250px */
+  &:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    border: 5px bold;
+    border-color: wheat;
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.load-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: wheat;
+    color: #007bff;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+// Estilos específicos
+
+// Puedes agregar estilos específicos aquí si lo necesitas
